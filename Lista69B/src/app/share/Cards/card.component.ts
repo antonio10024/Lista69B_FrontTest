@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() Title!:string;
   @Input() CentralText!:string;
-  @Input() Footer!:string;
+  @Input() Footer?:string;
 
 }

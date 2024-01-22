@@ -5,6 +5,7 @@ import{DashboardComponent} from'./dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { AppModule } from '../app.module';
 import { CardComponent } from '../share/Cards/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CardComponent } from '../share/Cards/card.component';
     ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    HttpClientModule 
   ]
 })
 export class DashboardModule { }
