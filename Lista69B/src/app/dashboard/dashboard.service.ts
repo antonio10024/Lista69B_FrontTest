@@ -23,7 +23,7 @@ export class DashboardService {
   }
 
   getListFound():Observable<cardResumen>{
-    const endPoint='ListaDeSeguimiento/ListFound';
+    const endPoint='TrackingList/ListFound';
     return this.api.get(environment.apiLista69B+endPoint).pipe(
       map((response:any)=>{
         return {
@@ -36,7 +36,7 @@ export class DashboardService {
     );
   }
   getListWatch():Observable<cardResumen>{
-    const endPoint='ListaDeSeguimiento/Active';
+    const endPoint='TrackingList/Active';
     return this.api.get(environment.apiLista69B+endPoint).pipe(
       map((response:any)=>{
         return {

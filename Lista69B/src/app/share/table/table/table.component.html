@@ -13,7 +13,7 @@
     <tbody class="flex flex-col items-center w-100   overflow-auto  " style="height: 50vh;  " >
 
         <tr class="flex items-center  w-full hover:bg-blue-800 hover:text-white  "
-        *ngFor="let item of this.value | searchFilterPipe:searchText" >
+        *ngFor="let item of this.value |  searchFilterPipe:searchText" >
         <td *ngFor="let itemHeader of this.header "   class="text-left  " [ngClass]="itemHeader.sclass"  > 
           
           <div *ngFor="let col of this.templates">
